@@ -6,7 +6,7 @@
 
 Welcome to the documentation for DeepSeek, an offline AI assistant developed using Electron JS, JavaScript (JS), HTML, and CSS. This project leverages the power of the DeepSeek Code v2 6b model for advanced natural language processing capabilities. The user interface is crafted with a combination of web technologies that enable a responsive and interactive experience.
 
-  
+![ScreenShort](https://media.discordapp.net/attachments/1252576401631084554/1334552599218880562/image.png?ex=679cf276&is=679ba0f6&hm=ef48e786502f9037fa3e28b292c129b21be5b60c6a780f887c0828452edc8991&=&format=webp&quality=lossless&width=629&height=581)  
 
 ## Features
 
