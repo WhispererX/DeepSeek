@@ -1,0 +1,23 @@
+{
+  "name": "deepseek",
+  "version": "1.0.0",
+  "description": "An offline AI assistant",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "DeepSeek"
+  },
+  "keywords": [
+    "AI",
+    "DeepSeek"
+  ],
+  "author": "Whisperer",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^34.0.2"
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeepSeek</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+
+<body>
+    <div class="notification">
+        <div id="notification" class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="message-container">
+        <div class="message">
+            <img class="profile" src="./Assets/Images/deepseek.png" width="35" />
+            <div class="content">
+                <md>
+# Hello, I'm [DeepSeek]()! 
+### I'm here to help with: 
+- General questions 
+- Code assistance
+
+![Welcome](./Assets/Images/welcome.png)
+<button style="border: none; background-color: #666; border-radius: 5px; color: white; padding: 8px; cursor: pointer;" onclick="formatRules()">Formatting Rules</button>
+                </md>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Replace input with textarea -->
+    <div class="input-container">
+        <textarea id="input" class="input" placeholder="Type your message here..."></textarea>
+    </div>
+
+    <!-- MarkDown Support-->
+    <script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>
+    <script src="index.js"></script>
+    <script src="renderer.js"></script>
+</body>
+
+</html>

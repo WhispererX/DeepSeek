@@ -1,0 +1,244 @@
+
+body {
+    background-color: #212121;
+    margin-inline: 10%;
+}
+
+img {
+    border-radius: 10px;
+}
+
+
+.message-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    
+}
+
+.message:last-child {
+    margin-bottom: 150px;
+}
+
+.message .profile {
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+    margin-top: 15px;
+    background-color: #212121;
+    border-radius: 25px;
+    border: 1px solid #ffffff75;
+    padding: 5px;
+    box-shadow: 0px 0px 5px 0px #000000;
+    /*Contain image*/
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content md {
+    display: flex;
+    flex-direction: column;
+    background-color: #2F2F2F;
+    color: #E6E6E6;
+    font-family: Arial, sans-serif;
+    margin: 15px;
+    padding-inline: 20px;
+    border-radius: 15px;
+    overflow-x: auto;
+    border: 1px solid #474747;
+    border-radius: 15px 15px 15px 0px;
+    justify-content: center;
+}
+
+
+.message .copy {
+    align-self: flex-start;
+    border-radius: 5px;
+    padding-inline: 4px;
+    padding-top: 3px;
+    margin-top: 15px;
+    padding-bottom: 3px;
+    border: 1px solid #474747;
+    color: #474747 ;
+}
+
+.message .copy:hover {
+    background-color: #474747;
+    color: white;
+    cursor: pointer;
+}
+
+.message .copied {
+    background-color: #54b861;
+    color: white;
+    cursor: pointer;
+}
+
+.message .copied:hover {
+    background-color: #54b861;
+    color: white;
+    cursor: pointer;
+}
+
+.you {
+    align-self: flex-end;
+}
+
+.you md {
+    border-radius: 15px 15px 0px 15px;
+}
+
+.you i, .you .profile {
+    display: none;
+}
+
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #212121; 
+    padding: 20px;
+    z-index: 1000; 
+}
+
+.input {
+    width: 80%;
+    min-height: 40px;
+    max-height: 200px;
+    border-radius: 15px;
+    border: 1px solid #474747;
+    background-color: #2F2F2F;
+    color: #E6E6E6;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    margin-right: 10px;
+    outline: none;
+    resize: none;
+    overflow-y: auto;
+}
+
+
+.input:focus {
+    border: 1px solid #969696; /* Keeps the same border on focus */
+}
+
+a {
+    text-decoration: none;
+    color: #7285d8;
+}
+
+code {
+    background-color: #1a1a1a;
+    color: #E6E6E6;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+.notification {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification {
+    color: #E6E6E6;
+    position: fixed;
+    /*Position at top center*/
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#notification {
+    display: none;
+}
+
+
+.lds-ellipsis,
+.lds-ellipsis div {
+  box-sizing: border-box;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33.33333px;
+  width: 13.33333px;
+  height: 13.33333px;
+  border-radius: 50%;
+  background: currentColor;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+
